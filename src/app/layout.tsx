@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from 'next/font/google'
 import "./globals.css";
+import Sidebar from "@/components/layout/Sidebar";
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -21,7 +22,12 @@ export default function RootLayout({
       <body
         className={`${manrope.className}`}
       >
-        {children}
+        <div className="wrapper grid grid-cols-[300px,minmax(0,1fr)] h-screen">
+          <Sidebar />
+          <main>
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
