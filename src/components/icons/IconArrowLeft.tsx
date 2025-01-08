@@ -1,11 +1,11 @@
 import React, { ComponentProps } from 'react'
 
-const IconExplore = (props: ComponentProps<"svg">) => {
+const IconArrowLeft = (props: ComponentProps<"svg">) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
         </svg>
     )
 }
 
-export default IconExplore
+export default IconArrowLeft;

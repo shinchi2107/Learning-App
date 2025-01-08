@@ -90,6 +90,7 @@ const SignIn = () => {
                   <Link className='text-sm font-medium' href="/forgot-password">Forgot password?</Link>
                 </div>
                 <Button type="submit">Login</Button>
+                <span className='flex justify-center text-sm'>Don&apos;t have an account?&nbsp;<Link className='underline' href="/sign-up">Sign-up</Link></span>
               </div>
             </form>
           </Form>
